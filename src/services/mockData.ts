@@ -41,6 +41,30 @@ const storage = {
       capacity: 2,
       isAvailable: false
     },
+    {
+      id: "t7",
+      tableNumber: 3,
+      capacity: 6,
+      isAvailable: false
+    },
+    {
+      id: "t8",
+      tableNumber: 4,
+      capacity: 4,
+      isAvailable: true
+    },
+    {
+      id: "t9",
+      tableNumber: 5,
+      capacity: 8,
+      isAvailable: true
+    },
+    {
+      id: "t10",
+      tableNumber: 6,
+      capacity: 2,
+      isAvailable: false
+    },
   ] as TableAvailability[],
 };
 
