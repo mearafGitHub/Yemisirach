@@ -1,0 +1,75 @@
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 36 33% 97%;
+    --foreground: 30 10% 15%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 30 10% 15%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 30 10% 15%;
+
+    --primary: 168 93% 20%; /* Changed from brown to green */
+    --primary-foreground: 30 33% 97%;
+
+    --secondary: 40 50% 90%;
+    --secondary-foreground: 168 93% 20%; /* Changed from brown to green */
+
+    --muted: 40 20% 96%;
+    --muted-foreground: 30 10% 40%;
+
+    --accent: 40 40% 85%;
+    --accent-foreground: 168 93% 20%; /* Changed from brown to green */
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 30 15% 85%;
+    --input: 30 15% 85%;
+    --ring: 168 93% 20%; /* Changed from brown to green */
+
+    --radius: 0.5rem;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  html {
+    @apply scroll-smooth;
+  }
+  body {
+    @apply bg-background text-foreground font-poppins;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-playfair font-semibold;
+  }
+}
+
+@layer components {
+  .section-padding {
+    @apply py-16 px-4 md:px-8 lg:px-12 max-w-7xl mx-auto;
+  }
+  
+  .btn-primary {
+    @apply bg-restaurant-earth text-white hover:bg-restaurant-brown transition-colors font-medium px-5 py-2 rounded-md;
+  }
+  
+  .btn-outline {
+    @apply border-2 border-restaurant-earth text-restaurant-earth hover:bg-restaurant-earth hover:text-white transition-colors font-medium px-5 py-2 rounded-md;
+  }
+  
+  .menu-card {
+    @apply bg-white rounded-lg shadow-md overflow-hidden transition-all hover:shadow-lg;
+  }
+  
+  .menu-image {
+    @apply w-full h-48 object-cover transition-transform hover:scale-105 duration-300;
+  }
+}
